@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Follow Us for Points</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .follow-page {
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 20px;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .follow-page h2 {
+            color: #333;
+        }
+        .follow-options {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .follow-button {
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            margin: 5px 0;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+            max-width: 200px;
+            text-align: center;
+        }
+        .follow-button:hover {
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+
+<div class="follow-page">
+    <h2>Follow Us to Earn Points</h2>
+    <p>Follow our social media accounts to earn points and increase your chances of winning!</p>
+
+    <div class="follow-options">
+        <button class="follow-button" onclick="followInstagram()">Follow on Instagram - 100 Points</button>
+        <button class="follow-button" onclick="followFacebook()">Follow on Facebook - 100 Points</button>
+        <button class="follow-button" onclick="followTwitter()">Follow on Twitter - 100 Points</button>
+        <button class="follow-button" onclick="followLinkedIn()">Follow on LinkedIn - 100 Points</button>
+        <button class="follow-button" onclick="followYouTube()">Subscribe on YouTube - 150 Points</button>
+    </div>
+</div>
+
+<script>
+    function followInstagram() {
+        window.open("https://www.instagram.com/YOUR_PROFILE", "_blank");
+    }
+    function followFacebook() {
+        window.open("https://www.facebook.com/YOUR_PROFILE", "_blank");
+    }
+    function followTwitter() {
+        window.open("https://twitter.com/YOUR_PROFILE", "_blank");
+    }
+    function followLinkedIn() {
+        window.open("https://www.linkedin.com/company/YOUR_PROFILE", "_blank");
+    }
+    function followYouTube() {
+        window.open("https://www.youtube.com/channel/YOUR_PROFILE", "_blank");
+    }
+</script>
+
+</body>
+</html>
