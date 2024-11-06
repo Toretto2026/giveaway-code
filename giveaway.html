@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Follow Us for Points</title>
+    <title>Giveaway - Follow and Share</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -15,7 +15,7 @@
             height: 100vh;
             margin: 0;
         }
-        .follow-page {
+        .container {
             background-color: white;
             border: 1px solid #ddd;
             padding: 20px;
@@ -24,16 +24,16 @@
             text-align: center;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
         }
-        .follow-page h2 {
+        h2 {
             color: #333;
         }
-        .follow-options {
+        .options {
             display: flex;
             flex-direction: column;
             align-items: center;
             margin-top: 20px;
         }
-        .follow-button {
+        .button {
             background-color: black;
             color: white;
             padding: 10px 20px;
@@ -45,27 +45,46 @@
             max-width: 200px;
             text-align: center;
         }
-        .follow-button:hover {
+        .button:hover {
             background-color: grey;
+        }
+        .section {
+            margin-top: 30px;
         }
     </style>
 </head>
 <body>
 
-<div class="follow-page">
-    <h2>Follow Us to Earn Points</h2>
-    <p>Follow our social media accounts to earn points and increase your chances of winning!</p>
+<div class="container">
+    <!-- Follow Us Section -->
+    <div class="section">
+        <h2>Follow Us to Earn Points</h2>
+        <p>Follow our social media accounts to earn points and increase your chances of winning!</p>
+        <div class="options">
+            <button class="button" onclick="followInstagram()">Follow on Instagram - 100 Points</button>
+            <button class="button" onclick="followFacebook()">Follow on Facebook - 100 Points</button>
+            <button class="button" onclick="followTwitter()">Follow on Twitter - 100 Points</button>
+            <button class="button" onclick="followLinkedIn()">Follow on LinkedIn - 100 Points</button>
+            <button class="button" onclick="followYouTube()">Subscribe on YouTube - 150 Points</button>
+        </div>
+    </div>
 
-    <div class="follow-options">
-        <button class="follow-button" onclick="followInstagram()">Follow on Instagram - 100 Points</button>
-        <button class="follow-button" onclick="followFacebook()">Follow on Facebook - 100 Points</button>
-        <button class="follow-button" onclick="followTwitter()">Follow on Twitter - 100 Points</button>
-        <button class="follow-button" onclick="followLinkedIn()">Follow on LinkedIn - 100 Points</button>
-        <button class="follow-button" onclick="followYouTube()">Subscribe on YouTube - 150 Points</button>
+    <!-- Share with Friends Section -->
+    <div class="section">
+        <h2>Share with Friends</h2>
+        <p>Share this giveaway with your friends to earn more points!</p>
+        <div class="options">
+            <button class="button" onclick="shareWhatsApp()">Share on WhatsApp</button>
+            <button class="button" onclick="shareFacebook()">Share on Facebook</button>
+            <button class="button" onclick="shareTwitter()">Share on Twitter</button>
+            <button class="button" onclick="shareInstagram()">Share on Instagram</button>
+            <button class="button" onclick="shareLinkedIn()">Share on LinkedIn</button>
+        </div>
     </div>
 </div>
 
 <script>
+    // Follow Us Functions
     function followInstagram() {
         window.open("https://www.instagram.com/YOUR_PROFILE", "_blank");
     }
@@ -80,6 +99,23 @@
     }
     function followYouTube() {
         window.open("https://www.youtube.com/channel/YOUR_PROFILE", "_blank");
+    }
+
+    // Share with Friends Functions
+    function shareWhatsApp() {
+        window.open("https://api.whatsapp.com/send?text=Check%20out%20this%20giveaway!%20YOUR_LINK_HERE", "_blank");
+    }
+    function shareFacebook() {
+        window.open("https://www.facebook.com/sharer/sharer.php?u=YOUR_LINK_HERE", "_blank");
+    }
+    function shareTwitter() {
+        window.open("https://twitter.com/intent/tweet?url=YOUR_LINK_HERE&text=Check%20out%20this%20giveaway!", "_blank");
+    }
+    function shareInstagram() {
+        alert("Instagram sharing feature is limited on the web. Please share manually on the Instagram app!");
+    }
+    function shareLinkedIn() {
+        window.open("https://www.linkedin.com/shareArticle?mini=true&url=YOUR_LINK_HERE", "_blank");
     }
 </script>
 
